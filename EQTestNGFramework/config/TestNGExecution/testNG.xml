@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><suite name="Equitrac Regression" verbose="1">
+<listeners>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+		<listener class-name="atu.testng.reports.listeners.MethodListener"/>
+		<listener class-name="com.nuance.eq.main.config.CustomReporter"/>
+	</listeners>
+	
+   <test name="Test Add User" preserve-order="true">
+    <classes>
+      <class name="com.nuance.eq.tests.TesEQ">
+        <methods>
+          <include name="testAddUser"/>
+          <include name="testAPI_AutoPIN"/>
+           <exclude name="testActiveDirectory"/>
+            </methods>
+         </class>
+    </classes>
+    </test>
+    
+</suite>

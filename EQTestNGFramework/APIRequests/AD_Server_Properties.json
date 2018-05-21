@@ -1,0 +1,60 @@
+{
+  "LDAPSyncSettings": [],
+  "ADSyncSettings": [
+    {
+      "ADSettings": {
+        "DomainController": "",
+        "Domain": "",
+        "AllowFallbackToOtherDomainControllers": False,
+        "AuthUserName": "Administrator",
+        "AuthUserPassword": "Equitrac1",
+        "ApplicationPartition": ""
+      },
+      "AuthEncryptState": True,
+      "MostRecentUSN": 0,
+      "InvocationId": "",
+      "UseContainerLevelGeneralSyncSettings": False,
+      "GeneralSyncSettings": {
+        "SyncAdds": True,
+        "SyncChanges": True,
+        "SyncDeletes": True,
+        "DoAutoSync": False,
+        "Import": True,
+        "EnforceDeptLimits": True
+      },
+      "UpdateFrequency": 15,
+      "UseContainerLevelSearchFilterSettings": False,
+      "SearchFilterSettings": {
+        "SearchFilter": "(|(cn=AutomationUser)(&(description=Automation)))",
+        "FilterWindowStatus": ""
+      },
+      "UseContainerLevelFieldMappingSettings": False,
+      "FieldMappingSettings": {
+        "ImportDepartments": False,
+        "ImportHomeServer": False,
+        "ImportPrimaryPIN": False,
+        "ImportSecondaryPIN": False,
+        "ImportAlternatePIN": False,
+        "ImportColorQuota": False,
+        "ImportLocation": False,
+        "ImportDelegates": False,
+        "ImportHomeFolder": False,
+        "AccountName": "sAMAccountName",
+        "DisplayName": "displayName",
+        "EmailAddress": "mail",
+        "UserPrimaryPIN": "employeeId",
+        "UserPINSecondaryPIN": "employeeNumber",
+        "UserAlternatePIN": "employeeNumber",
+        "Department": "department",
+        "Location": "postalCode",
+        "UserColorQuota": "division",
+        "UserHomeServer": "pager",
+        "HomeFolder": "homeDrive",
+        "Delegates": "",
+        "UserAccountControl": "userAccountControl"
+      },
+      "IsDeleted": "isDeleted",
+      "ContainerSettings": []
+    }
+  ]
+}

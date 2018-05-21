@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Equitrac Regression]">
+  <listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+    <listener class-name="com.nuance.eq.main.config.CustomReporter"/>
+  </listeners>
+  <test name="Test Add User(failed)">
+    <classes>
+      <class name="com.nuance.eq.tests.TesEQ">
+        <methods>
+          <include name="testAPI_AutoPIN" invocation-numbers="3"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.nuance.eq.tests.TesEQ -->
+    </classes>
+  </test> <!-- Test Add User(failed) -->
+</suite> <!-- Failed suite [Equitrac Regression] -->

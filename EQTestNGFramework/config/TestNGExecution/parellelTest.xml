@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<?xml version="1.0" encoding="UTF-8"?>
+<suite allow-return-values="false" configfailurepolicy="skip" data-provider-thread-count="10" group-by-instances="false" guice-stage="DEVELOPMENT" junit="false" name="Localization testing Demo" parallel="tests" preserve-order="true" skipfailedinvocationcounts="false" thread-count="5" verbose="10">
+   <listeners>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+		<listener class-name="atu.testng.reports.listeners.MethodListener"/>
+	</listeners>
+   <parameter name="test_param" value="foo"/>
+   <test allow-return-values="false" group-by-instances="false" junit="false" name="Test Subscribe Functionality" preserve-order="true" skipfailedinvocationcounts="false">
+    <classes>
+      <class name="com.nuance.eq.tests.testAddUser">
+        <methods>
+          <include name="testAddUser"/>
+            </methods>
+         </class>
+    </classes>
+    </test>
+    <parameter name="test_param" value="foo"/>
+    <test allow-return-values="false" group-by-instances="false" junit="false" name="Test Blogs Functionality" preserve-order="true" skipfailedinvocationcounts="false">
+    <classes>
+      <class name="com.nuance.eq.tests.testAddUser">
+        <methods>
+             <exclude name="testAddUser"/>
+        </methods>
+         </class>
+    </classes>
+  </test>
+</suite>

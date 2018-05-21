@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Localization testing Demo]">
+  <listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+    <listener class-name="com.adp.main.config.CustomReporter"/>
+  </listeners>
+  <test name="Test Subscribe Functionality(failed)">
+    <classes>
+      <class name="com.adp.bi.tests.TestLocalization">
+        <methods>
+          <include name="testSubscribe" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adp.bi.tests.TestLocalization -->
+    </classes>
+  </test> <!-- Test Subscribe Functionality(failed) -->
+</suite> <!-- Failed suite [Localization testing Demo] -->
